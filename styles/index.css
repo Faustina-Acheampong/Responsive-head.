@@ -6,11 +6,12 @@
 
 .navbar {
   flex-shrink: 0;
+  margin: 50px 20px;
 }
 .navbar ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .navbar ul a {
   color: #FFF;
@@ -19,12 +20,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22.4px; /* 140% */
+  text-decoration: none;
+  text-align: center;
+  padding: 2rem;
 }
 
-.logo {
-  width: 90px;
-  flex-shrink: 0;
-}
 .logo a {
   text-decoration: none;
   font-family: Actor;
@@ -34,6 +34,10 @@
   line-height: 36px; /* 150% */
   letter-spacing: -0.25px;
   color: #FFF;
+}
+
+.navbar a:hover {
+  background-color: dimgray;
 }
 
 * {
