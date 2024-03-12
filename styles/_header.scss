@@ -5,11 +5,10 @@
 }
 .navbar {
     flex-shrink: 0;
-    margin: 50px 20px;
     & ul {
         list-style-type: none;
         display: flex;  
-        justify-content: space-evenly;  
+        justify-content: left;
         & a {
             color: #FFF;
             font-family: "Source Sans Pro";

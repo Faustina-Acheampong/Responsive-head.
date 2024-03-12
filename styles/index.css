@@ -6,12 +6,11 @@
 
 .navbar {
   flex-shrink: 0;
-  margin: 50px 20px;
 }
 .navbar ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
 }
 .navbar ul a {
   color: #FFF;
@@ -50,4 +49,44 @@ body {
   width: 100%;
   color: #FFF;
   background: #000;
+}
+
+.content-container::after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 102px; /* 121.429% */
+  letter-spacing: -2px;
+}
+
+.sidebar {
+  float: left;
+  width: 45%;
+  margin-top: 40px;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+.sidebar p {
+  width: 65%;
+  font-family: "Source Sans Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 154.545% */
+}
+
+.icon {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 40px;
+  margin-left: 20px;
 }
