@@ -5,6 +5,7 @@
 }
 .navbar {
     flex-shrink: 0;
+    align-items: flex-start;
     & ul {
         list-style-type: none;
         display: flex;  
@@ -18,7 +19,7 @@
             line-height: 22.4px; /* 140% */
             text-decoration: none;
             text-align: center;
-            padding: 2rem;
+            /*padding: 2rem;*/
         }
     }
 }
