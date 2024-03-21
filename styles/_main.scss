@@ -1,78 +1,96 @@
 $primary-color: #FFF;
-$background: #ca1c1c;
+$background: #000;
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0;  
 }
 
 body {
     min-height: 100vh;
-    width: 100%;  
-    color: $primary-color;
-    background: $background;
-    /*overflow-x: hidden; */
-}
-
-.main-container {
-    display: flex;
-    justify-content: space-around;
     width: 100%;
     max-width: 1440px;
-    margin-bottom: 20px;
+    height: 810px;
+    color: $primary-color;
+    background: $background;
+    /*overflow-x: hidden;*/ 
 }
 
-.sidebar {
-    width: 100%;
-    max-width: 50%;
+.content-container {
+   display: flex;
+   flex-wrap: wrap; 
+   padding: 1rem;
+}
+
+.content-container::after {
+    content: "";
+    display: flex;
+    clear: both;
+    padding: 1rem;
+}
+
+.sidebar {  
     float: left;
-    padding: 20px;
-}
-.textbox {
-    width: 65%;
-    padding-top: 6rem;
-    & h1 {
-        font-family: "Poppins";
-        font-size: 84px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 102px; /* 121.429% */
-        letter-spacing: -2px; 
-    }
+    width: 50%;
+    padding: 1rem;
+    
+   /* float: left;
+    width: 40%;
+    margin: 10px;
+    margin-left: 50px;
+    padding-right: 50px;*/ 
 }
 
-p {
+.sidebar h1 {
+    font-family: "Poppins";
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 102px; /* 121.429% */
+    letter-spacing: -2px; 
+    padding-top: 6rem;
+}
+
+.sidebar p {
     font-family: "Source Sans Pro";
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px; /* 154.545% */ 
+    line-height: 34px; /* 154.545% */  
 }
 
-.portrait {
+.sidebar .portrait img {
     display: flex;
-    flex-direction: column;
-    padding-right: 20px;
-    padding-top: 30px;
-}
-
-.portrait img {
-    max-width: 585px;
     width: 100%;
+    max-width: 585px;
+    padding-right: 1rem;
+    padding: 3rem;
+    
 }
-
-.icon {
-    display: flex;
-    align-items: center;
+.icon img{
+    display: inline;
+    margin-bottom: 30px;
+    margin-left: 1rem;
 }
-
 /* Responsive layout to stack the two columns on 
 top of each other instead of next to each other */
 @media screen and (min-width: 320px) and (max-width: 900px) {
     .sidebar {
         width: 100%;
     }
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;  
+    }
 }
+@media screen and (min-width: 320px) and (max-width: 900px) {
+    .sidebar .portrait img {
+       margin-left: 3rem;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     h1 {
         font-size: 84px;

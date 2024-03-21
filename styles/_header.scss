@@ -10,7 +10,7 @@
     & ul {
         display: flex;
         list-style-type: none;
-         margin-top: 10px; 
+        margin-top: 10px;
         & a {
             color: #FFF;
             font-family: "Source Sans Pro";
@@ -35,7 +35,7 @@
     line-height: 36px; /* 150% */
     letter-spacing: -0.25px;
     color: #FFF;
-    padding-right: 50px;
+    /*padding-right: 50px;*/
 }
 
 .navbar a:hover {
