@@ -29,9 +29,8 @@ body {
 }
 
 .sidebar {  
-    float: left;
-    width: 50%;
-    padding: 1rem; 
+    flex: 1; /* Make sidebar flexible */
+    padding: 20px;
 }
 
 .sidebar h1 {
@@ -53,17 +52,13 @@ body {
 }
 
 .sidebar .portrait img {
-    display: flex;
-    width: 100%;
-    max-width: 585px;
-    padding-right: 1rem;
-    padding-left: 3rem;
+    max-width: 100%; /* Ensures portrait image stays within sidebar */
+    height: auto; /* Maintains aspect ratio */
     
 }
 .icon img{
-    display: inline;
-    margin-bottom: 30px;
-    margin-left: 1rem;
+    max-width: 100%;
+    height: auto;
 }
 /* Responsive layout to stack the two columns on 
 top of each other instead of next to each other */
